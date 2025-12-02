@@ -1,115 +1,99 @@
+/* Background image */
 body {
     margin: 0;
-    padding: 40px 0;
-    font-family: "Verdana", sans-serif;
-    background: url("Images/background.jpg") no-repeat center center fixed;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url("Images/bliss_background.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-/* XP Glass Card */
-.card {
-    width: 80%;
-    max-width: 650px;
-    margin: auto;
-    padding: 35px;
-    background: rgba(255, 255, 255, 0.55);
-    backdrop-filter: blur(6px);
-    border-radius: 14px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
-    text-align: center;
-    border: 1px solid rgba(255,255,255,0.6);
+/* Main content box */
+.container {
+    width: 60%;
+    margin: 40px auto;
+    background: rgba(180, 180, 180, 0.85);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
 }
 
+/* Title */
 h1 {
-    font-size: 34px;
-    margin-bottom: 15px;
-    color: #002244;
-    text-shadow: 1px 1px 0 #fff;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
 }
 
-.bio {
-    color: #222;
-    font-size: 16px;
+/* Subtitle */
+.subtitle {
+    text-align: center;
+    font-size: 14px;
     margin-bottom: 25px;
+    color: #333;
 }
 
-/* === LINKS === */
-.links {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-bottom: 30px;
-}
-
-.links a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #0057d9;
-    font-size: 15px;
-}
-
-.links a:hover {
-    color: #003399;
-}
-
-.icon-small {
+/* Icons */
+.icon {
+    height: 18px;
     width: 18px;
     vertical-align: middle;
     margin-right: 6px;
 }
 
-/* === HEADERS === */
-.header-icon {
+.icon-section {
+    height: 20px;
     width: 20px;
-    margin-right: 6px;
     vertical-align: middle;
+    margin-right: 6px;
 }
 
-h2 {
-    margin-top: 35px;
-    margin-bottom: 10px;
-    font-size: 22px;
-    text-align: left;
-    color: #111;
+/* Link bar */
+.links {
+    text-align: center;
+    margin-bottom: 25px;
 }
 
-/* === PROJECTS === */
-.projects {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.project-card {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 14px 16px;
-    border-radius: 10px;
-    text-decoration: none;
-    background: rgba(255,255,255,0.65);
-    border: 1px solid rgba(255,255,255,0.75);
-    color: black;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-}
-
-.project-card:hover {
-    background: rgba(255,255,255,0.85);
-}
-
-.project-icon {
-    width: 32px;
-}
-
-/* === LISTS === */
-.section-list {
-    list-style: none;
-    padding: 0;
-    margin-top: 5px;
-    text-align: left;
-}
-
-.section-list li {
+.links a {
+    margin: 0 15px;
     font-size: 15px;
-    margin-bottom: 8px;
+    color: #0056a4;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Project items */
+.project {
+    background: #d3d3d3;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 12px 0;
+}
+
+.project a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project:hover {
+    background: #c9c9c9;
+}
+
+/* Section spacing */
+h2 {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+/* Lists */
+ul {
+    margin-left: 20px;
+    margin-top: 10px;
+    line-height: 1.7;
 }
